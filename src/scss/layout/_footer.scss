@@ -1,0 +1,67 @@
+@use '../helpers/variables'as *;
+@use '../helpers/mixins'as *;
+@use '../base/typography'as *;
+@use '../components/buttons'as *;
+@use '../components/icons'as *;
+
+.app-footer {
+    background-color: $very-dark-cyan;
+    padding: 137px 15px 27px 15px;
+    color: $very-pale-cyan;
+
+    &__img {
+        padding-bottom: 28px;
+    }
+
+    &__info {
+
+        ul:first-child {
+            padding-bottom: 64px;
+
+            li {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        ul:nth-last-of-type(2) {
+            padding-bottom: 60px;
+        }
+
+        ul:last-of-type {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        .link-contact {
+            .icon--padding {
+                align-self: flex-start;
+            }
+
+            img {
+                width: 18px;
+                height: 20px;
+                align-self: center;
+            }
+
+            &--padding {
+                padding-bottom: 27px;
+            }
+        }
+
+        .links-about--padding {
+
+            li:last-child {
+                padding-bottom: 0;
+            }
+        }
+
+        .links-about {
+            li {
+                padding-bottom: 22px;
+            }
+        }
+    }
+
+}
