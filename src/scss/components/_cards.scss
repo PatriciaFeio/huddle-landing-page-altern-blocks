@@ -7,6 +7,14 @@
     box-shadow: 0 0 9px -2px $grayish-blue;
     border-radius: 10px;
 
+    img {
+        width: 100%;
+
+        @include break-media('phone') {
+            width: 50%;
+        }
+    }
+
     @include break-media('phone') {
         display: flex;
     }
@@ -24,10 +32,6 @@
 
     &__img {
         padding-bottom: 55px;
-
-        @include break-media('phone') {
-            width: 50%;
-        }
     }
 
     &__info {
