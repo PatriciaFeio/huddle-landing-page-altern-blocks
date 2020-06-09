@@ -1,0 +1,22 @@
+@use '../helpers/variables'as *;
+@use '../helpers/mixins'as *;
+@use '../base/typography'as *;
+@use '../components/buttons'as *;
+@use '../components/cards'as *;
+
+.app-main {
+    padding: 0 20px;
+    margin-top: 56px;
+    margin-bottom: -69px;
+    display: flex;
+    flex-direction: column;
+
+    &__section {
+
+        @include break-media('phone') {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
