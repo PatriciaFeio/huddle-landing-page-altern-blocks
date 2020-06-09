@@ -1,0 +1,17 @@
+@use '../helpers/variables'as *;
+@use '../helpers/mixins'as *;
+@use '../base/typography'as *;
+@use '../layout/header'as *;
+@use '../layout/main'as *;
+@use '../layout/footer'as *;
+
+body {
+    background-color: $white;
+    min-height: 100vh;
+    width: 100%;
+    min-width: 375px;
+}
+
+a {
+    cursor: pointer;
+}
