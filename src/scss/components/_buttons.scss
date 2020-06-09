@@ -1,0 +1,30 @@
+@use '../helpers/variables' as *;
+@use '../helpers/mixins' as *;
+@use '../base/typography' as *;
+
+.btn {
+    font-family: $font-stack;
+    font-weight: $f_bold;
+    font-size: $f_medium;
+    border: none;
+    border-radius: 25px;
+
+    &--white {
+        color: $very-dark-cyan;
+        background-color: $white;
+        box-shadow: 0 0 9px -2px $grayish-blue;
+        padding: 0.3125rem 1.125rem;
+    }
+
+    &--pink {
+        color: $white;
+        background-color: $pink;
+        padding: 0.6875rem 3.875rem;
+    }
+
+    &--small {
+        font-size: $f_small;
+        padding: 0.8125rem 36px;
+        margin: 27px 74px 0 74px;
+    }
+}
