@@ -1,0 +1,71 @@
+@use '../helpers/variables'as *;
+@use '../helpers/mixins'as *;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+body {
+  font-family: $font-stack;
+  font-weight: 400;
+  color: $very-dark-cyan;
+}
+
+h1,
+h2,
+h3 {
+  @include headings;
+}
+
+h1 {
+  font-size: $f_heading1;
+}
+
+h2 {
+  font-size: $f_heading2;
+}
+
+h3 {
+  font-size: $f_heading3;
+}
+
+p {
+  line-height: 1.6;
+  text-align: center;
+
+  @include break-media('phone') {
+    text-align: left;
+  }
+}
+
+.p {
+
+  &--hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &--card {
+    color: $grayish-blue;
+    font-size: $f_medium;
+
+    @include break-media('phone') {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &--inline {
+    display: inline;
+    text-align: left;
+  }
+
+  &--copy {
+    font-size: $f_xSmall;
+
+    & a {
+      color: $very-pale-cyan;
+    }
+  }
+
+  &--contact {
+    font-size: 18px;
+    padding-left: 18px;
+  }
+}

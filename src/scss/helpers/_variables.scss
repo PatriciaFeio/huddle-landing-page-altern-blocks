@@ -1,0 +1,49 @@
+
+//colors
+$pink: hsl(322, 100%, 66%);
+$very-pale-cyan: hsl(193, 100%, 96%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
+$white: hsl(0, 0%, 100%);
+
+//fonts
+$font-stack: 'Open Sans',
+sans-serif;
+$headings-font: 'Poppins',
+sans-serif;
+
+$f_heading1: 1.5em; //24
+$f_heading2: 1.25em; //20
+$f_heading3: 1.125em; //18
+$f_xLarge: 1.125em;
+$f_large: 1em;
+$f_medium: 0.875em; //14
+$f_small: 0.75em; //12
+$f_xSmall: 0.6875em; //11
+$f_xxSmall: 0.625em; //10
+
+$f_regular: 400;
+$f_semi-bold: 600;
+$f_bold: 700;
+
+$align-center: center;
+$align-left: left;
+
+
+//spaces
+$mobile-icon: 0.625rem;
+$desktop-icon: 0.75rem;
+$xxxSmall: 1rem; //16
+$xxSmall: 1.5625rem; //25
+//$xSmall: 2.75rem; //44
+$small: 2.5rem;
+$medium: 2.8125rem;
+$large: 3.75rem;
+$xLarge: 4.0625rem;
+$xxLarge: 5.375rem; // 86px 5.5rem; // 88
+//$xxxLarge: 6.25rem;
+
+//breakpoints
+$breakpoints: ('phone': 768px,
+  'tablet': 992px,
+  'desktop': 1440px) !default;

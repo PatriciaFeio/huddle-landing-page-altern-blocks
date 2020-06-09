@@ -1,0 +1,20 @@
+@use 'variables'as *;
+
+
+//https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+@mixin break-media($breakpoint) {
+
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+
+  }
+}
+
+@mixin headings {
+  font-family: $headings-font;
+  font-weight: $f_semi-bold;
+  text-align: center;
+}
