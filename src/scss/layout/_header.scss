@@ -9,6 +9,15 @@
     background-color: $very-pale-cyan;
     background-repeat: no-repeat;
     background-size: 100%;
+    text-align: center;
+
+    @include break-media('phone') {
+        text-align: left;
+    }
+
+    @include break-media('tablet') {
+        background: url(/src/images/bg-hero-desktop.svg);
+    }
 
     &__nav {
         padding-top: $xxSmall;
@@ -16,6 +25,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        svg {
+
+            @include break-media('tablet') {
+                width: 200px;
+                height: 40px;
+            }
+
+        }
+
     }
 
     &__hero {

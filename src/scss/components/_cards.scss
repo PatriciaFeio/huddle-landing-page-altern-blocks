@@ -5,18 +5,20 @@
 .card {
     background-color: $white;
     box-shadow: 0 0 9px -2px $grayish-blue;
-    border-radius: 10px;
+    border-radius: 18px;
+    text-align: center;
 
-    img {
+    /*     img {
         width: 100%;
 
         @include break-media('phone') {
             width: 50%;
         }
-    }
+    } */
 
     @include break-media('phone') {
         display: flex;
+        text-align: left;
     }
 
     &--reverse {
@@ -28,10 +30,24 @@
     &--primary {
         padding: 55px 40px 36px 40px;
         margin-bottom: 36px;
+
+        @include break-media('phone') {
+            padding: 55px 20px 55px 80px;
+        }
+
+        @include break-media('tablet') {
+            padding: 66px 20px 66px 120px;
+        }
     }
 
     &__img {
+        width: 100%;
         padding-bottom: 55px;
+
+        @include break-media('phone') {
+            width: 37%;
+            padding-bottom: 0;
+        }
     }
 
     &__info {

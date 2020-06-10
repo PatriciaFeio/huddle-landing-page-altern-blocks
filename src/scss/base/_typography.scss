@@ -20,6 +20,10 @@ h1 {
 
 h2 {
   font-size: $f_heading2;
+
+  @include break-media('tablet') {
+    font-size: $f_heading2-large;
+  }
 }
 
 h3 {
@@ -28,11 +32,11 @@ h3 {
 
 p {
   line-height: 1.6;
-  text-align: center;
+  //text-align: center;
 
-  @include break-media('phone') {
+  /* @include break-media('phone') {
     text-align: left;
-  }
+  } */
 }
 
 .p {
@@ -49,14 +53,19 @@ p {
     @include break-media('phone') {
       flex-direction: row-reverse;
     }
+
+    @include break-media('tablet') {
+      font-size: 18px;
+    }
   }
 
-  &--inline {
+  /*   &--inline {
     display: inline;
     text-align: left;
-  }
+  } */
 
   &--copy {
+    text-align: center;
     font-size: $f_xSmall;
 
     & a {

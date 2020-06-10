@@ -6,7 +6,7 @@
 
 .app-footer {
     background-color: $very-dark-cyan;
-    padding: 137px 15px 27px 15px;
+    padding: 137px 15px 24px 15px;
     color: $very-pale-cyan;
 
     &__img {
@@ -15,26 +15,42 @@
 
     &__info {
 
-        ul:first-child {
+        .info--container {
+            ul {
+                padding-bottom: 64px;
+            }
+        }
+
+        .about--container {
+
+            @include break-media('phone') {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+
+        /*         ul:first-child {
             padding-bottom: 64px;
 
             li {
                 display: flex;
                 flex-direction: row;
             }
-        }
+        } */
 
-        ul:nth-last-of-type(2) {
-            padding-bottom: 60px;
-        }
+        /*         ul:nth-last-of-type(2) {
+            padding-bottom: 56px;
+        } */
 
-        ul:last-of-type {
+        /* ul:last-of-type {
             display: flex;
             justify-content: center;
-            padding-bottom: 20px;
-        }
+            padding-bottom: 23px;
+        } */
 
         .link-contact {
+            display: flex;
+
             .icon--padding {
                 align-self: flex-start;
             }
@@ -50,17 +66,25 @@
             }
         }
 
-        .links-about--padding {
+        /*         .links-about--padding {
 
             li:last-child {
                 padding-bottom: 0;
             }
-        }
+        } */
 
         .links-about {
             li {
                 padding-bottom: 22px;
             }
+
+        }
+
+        .links-social {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 23px;
+            padding-top: 55px;
         }
     }
 
