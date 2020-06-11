@@ -26,11 +26,9 @@
 
     &__info {
 
-
         @include break-media('desktop') {
             display: flex;
             padding-right: 126px;
-
         }
 
         .about--container {
@@ -99,6 +97,10 @@
                     padding-bottom: 22px;
                     cursor: pointer;
 
+                    a {
+                        text-decoration-line: none;
+                    }
+
                     @include break-media('desktop') {
                         padding-left: 120px;
                     }
@@ -107,10 +109,6 @@
                 li:hover {
                     color: $pink;
                     transition: $transition-hover;
-                }
-
-                @include break-media('desktop') {
-                    flex: 1 0;
                 }
             }
 
@@ -128,5 +126,4 @@
             }
         }
     }
-
 }

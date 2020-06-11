@@ -4,7 +4,7 @@
 
 body {
   font-family: $font-stack;
-  font-weight: 400;
+  font-weight: $f_regular;
   color: $very-dark-cyan;
 }
 
@@ -18,7 +18,7 @@ h1 {
   font-size: $f_heading1;
 
   @include break-media('desktop') {
-    font-size: 45px;
+    font-size: $f_heading1-large;
   }
 }
 
@@ -34,12 +34,22 @@ h3 {
   font-size: $f_heading3;
 
   @include break-media('desktop') {
-    font-size: 32px;
+    font-size: $f_heading3-large;
   }
 }
 
 p {
   line-height: 1.6;
+}
+
+a {
+  color: $very-pale-cyan;
+  transition: $transition-hover;
+}
+
+a:hover {
+  color: $pink;
+  transition: $transition-hover;
 }
 
 .p {
@@ -49,7 +59,7 @@ p {
     padding-bottom: 2rem;
 
     @include break-media('desktop') {
-      font-size: 18px;
+      font-size: $f_large;
       padding-top: 40px;
     }
   }
@@ -63,42 +73,32 @@ p {
     }
 
     @include break-media('tablet') {
-      font-size: 18px;
+      font-size: $f_large;
     }
   }
 
   &--copy {
-    text-align: center;
-    font-size: $f_xSmall;
+    text-align: $align-center;
+    font-size: $f_xxSmall;
 
     @include break-media('desktop') {
-      text-align: right;
-    }
-
-    a {
-      color: $very-pale-cyan;
-      transition: $transition-hover;
-    }
-
-    a:hover {
-      color: $pink;
-      transition: $transition-hover;
+      text-align: $align-right;
     }
   }
 
   &--contact {
-    font-size: 18px;
+    font-size: $f_large;
     padding-left: 23px;
 
     @include break-media('desktop') {
-      font-size: 15px;
+      font-size: $f_medium;
     }
   }
 
   &__about--font {
 
     li {
-      font-size: 15px;
+      font-size: $f_medium;
     }
   }
 }

@@ -13,7 +13,7 @@
     }
 
     &--white {
-        font-size: 10px;
+        font-size: $f_xxxSmall;
         color: $very-dark-cyan;
         background-color: $white;
         box-shadow: 0 0 9px -2px $grayish-blue;
@@ -21,7 +21,7 @@
         transition: $transition-hover;
 
         @include break-media('tablet') {
-            font-size: 14px;
+            font-size: $f_small;
             padding: 15px 65px;
         }
     }
@@ -33,7 +33,7 @@
     }
 
     &--pink {
-        font-size: 12px;
+        font-size: $f_xSmall;
         color: $white;
         background-color: $pink;
         transition: $transition-hover;
@@ -47,7 +47,6 @@
     }
 
     &--large {
-        //padding: 0.6875rem 3.875rem;
         padding: 11px 61px;
 
         @include break-media('tablet') {
@@ -56,18 +55,17 @@
     }
 
     &--small {
-        //padding: 0.8125rem 36px;
         padding: 10px 41px;
         margin: 24px 74px 0 74px;
 
         @include break-media('tablet') {
-            font-size: 16px;
-            padding: 29px 122px;
+            font-size: $f_default;
+            padding: 1.875em 7.625em;
         }
 
         @include break-media('desktop') {
-            font-size: 20px;
-            padding: 29px 100px;
+            font-size: $f_xLarge;
+            padding: 1.35em 5.15em;
             margin-top: 34px;
         }
     }

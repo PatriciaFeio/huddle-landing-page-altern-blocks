@@ -8,10 +8,10 @@
     background-color: $very-pale-cyan;
     background-repeat: no-repeat;
     background-size: 100%;
-    text-align: center;
+    text-align: $align-center;
 
     @include break-media('phone') {
-        text-align: left;
+        text-align: $align-left;
     }
 
     @include break-media('tablet') {
@@ -19,7 +19,7 @@
         background-color: $very-pale-cyan;
         background-repeat: no-repeat;
         background-size: 100%;
-        text-align: center;
+        text-align: $align-center;
     }
 
     &__nav {
@@ -27,7 +27,7 @@
         padding: $xxSmall $xxxSmall $xxLarge $xxxSmall;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: $align-center;
 
         @include break-media('tablet') {
             padding: 50px 78px 67px 78px;
@@ -39,15 +39,13 @@
                 width: 200px;
                 height: 40px;
             }
-
         }
-
     }
 
     &__hero {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: $align-center;
         padding-left: 2.375rem; //38
         padding-right: 2.375rem;
         padding-top: 0;
