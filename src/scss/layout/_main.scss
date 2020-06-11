@@ -11,6 +11,11 @@
     display: flex;
     flex-direction: column;
 
+    @include break-media('desktop') {
+        margin-top: 156px;
+        padding: 0 100px;
+    }
+
     &__section {
 
         @include break-media('phone') {
