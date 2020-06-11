@@ -47,3 +47,5 @@ $xxLarge: 5.375rem; // 86px 5.5rem; // 88
 $breakpoints: ('phone': 768px,
   'tablet': 992px,
   'desktop': 1440px) !default;
+
+$transition-hover: all 0.6s linear;
