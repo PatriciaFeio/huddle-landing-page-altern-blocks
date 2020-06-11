@@ -6,7 +6,11 @@
     font-family: $font-stack;
     font-weight: $f_bold;
     border: none;
-    border-radius: 25px;
+    border-radius: 42px;
+
+    &:focus {
+        outline: 2px dashed $pink;
+    }
 
     &--white {
         font-size: 10px;
@@ -14,6 +18,7 @@
         background-color: $white;
         box-shadow: 0 0 9px -2px $grayish-blue;
         padding: 5px 25px;
+        transition: $transition-hover;
 
         @include break-media('tablet') {
             font-size: 14px;
@@ -21,10 +26,24 @@
         }
     }
 
+    &--white:hover {
+        color: $white;
+        background-color: $pink;
+        transition: $transition-hover;
+    }
+
     &--pink {
         font-size: 12px;
         color: $white;
         background-color: $pink;
+        transition: $transition-hover;
+    }
+
+    &--pink:hover {
+        color: $pink;
+        background-color: $white;
+        box-shadow: 0 0 4px $pink;
+        transition: $transition-hover;
     }
 
     &--large {
@@ -44,6 +63,12 @@
         @include break-media('tablet') {
             font-size: 16px;
             padding: 29px 122px;
+        }
+
+        @include break-media('desktop') {
+            font-size: 20px;
+            padding: 29px 100px;
+            margin-top: 34px;
         }
     }
 }

@@ -1,27 +1,27 @@
-@use '../helpers/variables' as *;
-@use '../helpers/mixins' as *;
+@use '../helpers/variables'as *;
+@use '../helpers/mixins'as *;
 
 .icon {
-    width: 30px;
-    //margin-right: $xxxSmall;
-    margin-right: 14px;
-  
-    @include break-media('tablet') {
-      //margin-right: $desktop-icon;
-      width: 45px;
-    }
-  
-    &--margin {
-      margin-right: 0;
-    }
-  
-    &--social {
-      fill: $very-pale-cyan;
-      //transition: $transition-hover;
-    }
-  
-    &--social:hover {
-      fill: $pink;
-      //transition: $transition-hover;
-    }
+  width: 30px;
+  //margin-right: $xxxSmall;
+  margin-right: 14px;
+
+  @include break-media('tablet') {
+    //margin-right: $desktop-icon;
+    width: 45px;
   }
+
+  &--margin {
+    margin-right: 0;
+  }
+
+  &--social {
+    fill: $very-pale-cyan;
+    transition: $transition-hover;
+  }
+
+  &--social:hover {
+    fill: $pink;
+    transition: $transition-hover;
+  }
+}

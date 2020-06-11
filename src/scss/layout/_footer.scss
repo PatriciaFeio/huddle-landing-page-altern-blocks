@@ -9,82 +9,123 @@
     padding: 137px 15px 24px 15px;
     color: $very-pale-cyan;
 
-    &__img {
+    @include break-media('phone') {
+        padding: 187px 78px 43px 120px;
+    }
+
+    &__logo {
         padding-bottom: 28px;
+
+        svg {
+            @include break-media('desktop') {
+                width: 242px;
+                height: 43px;
+            }
+        }
     }
 
     &__info {
 
-        .info--container {
-            ul {
-                padding-bottom: 64px;
-            }
+
+        @include break-media('desktop') {
+            display: flex;
+            padding-right: 126px;
+
         }
 
         .about--container {
 
-            @include break-media('phone') {
+            @include break-media('desktop') {
                 display: flex;
-                justify-content: space-evenly;
             }
         }
 
-        /*         ul:first-child {
-            padding-bottom: 64px;
+        .info {
 
-            li {
-                display: flex;
-                flex-direction: row;
-            }
-        } */
+            &--container {
+                ul {
+                    padding-bottom: 64px;
+                }
 
-        /*         ul:nth-last-of-type(2) {
-            padding-bottom: 56px;
-        } */
-
-        /* ul:last-of-type {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 23px;
-        } */
-
-        .link-contact {
-            display: flex;
-
-            .icon--padding {
-                align-self: flex-start;
-            }
-
-            img {
-                width: 18px;
-                height: 20px;
-                align-self: center;
+                @include break-media('desktop') {
+                    flex: 1 0;
+                }
             }
 
             &--padding {
-                padding-bottom: 27px;
+                padding-left: 27px;
+            }
+
+            &--padding-small {
+                padding-left: 23px;
+            }
+
+            &__contact {
+                display: flex;
+
+                &--padding {
+                    padding-bottom: 27px;
+                }
+
+                .icon--padding {
+                    align-self: flex-start;
+                }
+            }
+
+            &__icon {
+                &-location {
+                    width: 18px;
+                    height: 20px;
+                }
+
+                &-phone {
+                    width: 21px;
+                    height: 21px;
+                    align-self: center;
+                }
+
+                &-mail {
+                    width: 22px;
+                    height: 19px;
+                    align-self: center;
+                }
             }
         }
 
-        /*         .links-about--padding {
+        .links {
 
-            li:last-child {
-                padding-bottom: 0;
+            &-about {
+                li {
+                    padding-bottom: 22px;
+                    cursor: pointer;
+
+                    @include break-media('desktop') {
+                        padding-left: 120px;
+                    }
+                }
+
+                li:hover {
+                    color: $pink;
+                    transition: $transition-hover;
+                }
+
+                @include break-media('desktop') {
+                    flex: 1 0;
+                }
             }
-        } */
 
-        .links-about {
-            li {
-                padding-bottom: 22px;
+            &-social {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 23px;
+                padding-top: 34px;
+
+                @include break-media('desktop') {
+                    flex: 1 0;
+                    padding-top: 0;
+                    justify-content: flex-end;
+                }
             }
-
-        }
-
-        .links-social {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 23px;
-            padding-top: 55px;
         }
     }
 

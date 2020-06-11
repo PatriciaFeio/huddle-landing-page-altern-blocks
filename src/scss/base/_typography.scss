@@ -16,6 +16,10 @@ h3 {
 
 h1 {
   font-size: $f_heading1;
+
+  @include break-media('desktop') {
+    font-size: 45px;
+  }
 }
 
 h2 {
@@ -28,15 +32,14 @@ h2 {
 
 h3 {
   font-size: $f_heading3;
+
+  @include break-media('desktop') {
+    font-size: 32px;
+  }
 }
 
 p {
   line-height: 1.6;
-  //text-align: center;
-
-  /* @include break-media('phone') {
-    text-align: left;
-  } */
 }
 
 .p {
@@ -44,6 +47,11 @@ p {
   &--hero {
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    @include break-media('desktop') {
+      font-size: 18px;
+      padding-top: 40px;
+    }
   }
 
   &--card {
@@ -59,22 +67,38 @@ p {
     }
   }
 
-  /*   &--inline {
-    display: inline;
-    text-align: left;
-  } */
-
   &--copy {
     text-align: center;
     font-size: $f_xSmall;
 
-    & a {
+    @include break-media('desktop') {
+      text-align: right;
+    }
+
+    a {
       color: $very-pale-cyan;
+      transition: $transition-hover;
+    }
+
+    a:hover {
+      color: $pink;
+      transition: $transition-hover;
     }
   }
 
   &--contact {
     font-size: 18px;
-    padding-left: 18px;
+    padding-left: 23px;
+
+    @include break-media('desktop') {
+      font-size: 15px;
+    }
+  }
+
+  &__about--font {
+
+    li {
+      font-size: 15px;
+    }
   }
 }

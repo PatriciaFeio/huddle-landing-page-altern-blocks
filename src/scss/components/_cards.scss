@@ -36,7 +36,7 @@
         }
 
         @include break-media('tablet') {
-            padding: 66px 20px 66px 120px;
+            padding: 66px 30px 66px 120px;
         }
     }
 
@@ -54,6 +54,25 @@
 
         @include break-media('phone') {
             align-self: center;
+            padding-right: 90px;
+        }
+
+        @include break-media('phone') {
+            align-self: center;
+            padding-right: 90px;
+        }
+
+        @include break-media('phone') {
+            padding-right: 180px;
+        }
+
+        &--padding {
+            padding-right: 0;
+            padding-left: 90px;
+
+            @include break-media('phone') {
+                padding-left: 160px;
+            }
         }
 
         &--header {
@@ -75,6 +94,12 @@
             flex-direction: column;
             align-items: center;
             width: 80%;
+        }
+
+        @include break-media('desktop') {
+            padding-top: 72px;
+            padding-bottom: 50px;
+            width: 65%;
         }
 
 
