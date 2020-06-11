@@ -80,7 +80,7 @@
             alt=""
             class="card__img"
           />
-          <div class="card__info">
+          <div class="card__info card__info--padding">
             <h2 class="card__info--header">Flowing Conversations</h2>
             <p class="p--card">
               You wouldn't paginate a conversation in real life, so why do it
@@ -111,7 +111,7 @@
       </section>
     </main>
     <footer class="app-footer">
-      <div class="app-footer__img">
+      <div class="app-footer__logo">
         <svg
           width="171"
           height="29"
@@ -133,28 +133,36 @@
       <div class="app-footer__info">
         <div class="info--container">
           <ul>
-            <li class="link-contact link-contact--padding">
+            <li class="info__contact info__contact--padding">
               <img
                 src="src/images/icon-location.svg"
                 alt="location icon"
-                class="icon--padding"
+                class="info__icon-location info__icon--padding"
               />
-              <p class="p--inline p--contact">
+              <p class="p--contact info--padding">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
             </li>
-            <li class="link-contact link-contact--padding">
-              <img src="src/images/icon-phone.svg" alt="phone icon" />
-              <p class="p--inline p--contact">+1-543-123-4567</p>
+            <li class="info__contact info__contact--padding">
+              <img
+                src="src/images/icon-phone.svg"
+                alt="phone icon"
+                class="info__icon-phone"
+              />
+              <p class="p--contact info--padding-small">+1-543-123-4567</p>
             </li>
-            <li class="link-contact">
-              <img src="src/images/icon-email.svg" alt="email icon" />
-              <p class="p--inline p--contact">example@huddle.com</p>
+            <li class="info__contact">
+              <img
+                src="src/images/icon-email.svg"
+                alt="email icon"
+                class="info__icon-mail"
+              />
+              <p class="p--contact info--padding-small">example@huddle.com</p>
             </li>
           </ul>
         </div>
-        <div class="about--container">
+        <div class="about--container p__about--font">
           <ul class="links-about">
             <li>About Us</li>
             <li>What We Do</li>
@@ -232,21 +240,17 @@
             </a>
           </li>
         </ul>
-        <div class="p--copy">
-          <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+      </div>
+      <div class="p--copy">
+        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
 
-          <p>
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by <a href="#">Patrícia Feio</a>.
-          </p>
-        </div>
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Patrícia Feio</a>.
+        </p>
       </div>
     </footer>
-
-    &copy; Copyright 2018 Huddle. All rights reserved.
   </body>
 </html>
