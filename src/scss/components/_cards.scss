@@ -55,7 +55,6 @@
 
         &--padding {
             padding-right: 0;
-            padding-left: 90px;
 
             @include break-media('phone') {
                 padding-left: 160px;
