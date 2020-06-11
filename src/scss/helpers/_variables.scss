@@ -12,15 +12,20 @@ $headings-font: 'Poppins',
 sans-serif;
 
 $f_heading1: 1.5em; //24
-$f_heading2: 1.25em; //20
-$f_heading2-large: 25px;
+$f_heading1-large: 2.8125em; //45
+$f_heading2: 1.25em; //20 //
+$f_heading2-large: 1.5625em; //25px
 $f_heading3: 1.125em; //18
-$f_xLarge: 1.125em;
-$f_large: 1em;
-$f_medium: 0.875em; //14
-$f_small: 0.75em; //12
-$f_xSmall: 0.6875em; //11
-$f_xxSmall: 0.625em; //10
+$f_heading3-large: 2em; //32
+
+$f_default: 1em;
+$f_xLarge: 1.25em;
+$f_large: 1.125em; // 18
+$f_medium: 0.9375em; //15
+$f_small: 0.875em; //14
+$f_xSmall: 0.75em; //12
+$f_xxSmall: 0.6875em; //11
+$f_xxxSmall: 0.625em; //10
 
 $f_regular: 400;
 $f_semi-bold: 600;
@@ -28,24 +33,21 @@ $f_bold: 700;
 
 $align-center: center;
 $align-left: left;
+$align-right: right;
 
 
 //spaces
-$mobile-icon: 0.625rem;
-$desktop-icon: 0.75rem;
-$xxxSmall: 1rem; //16
-$xxSmall: 1.5625rem; //25
-//$xSmall: 2.75rem; //44
-$small: 2.5rem;
-$medium: 2.8125rem;
-$large: 3.75rem;
-$xLarge: 4.0625rem;
-$xxLarge: 5.375rem; // 86px 5.5rem; // 88
+$xxxSmall: 1rem;
+$xxSmall: 1.5625rem;
+//$medium: 2.8125rem;
+//$large: 3.75rem;
+//$xLarge: 4.0625rem;
+$xxLarge: 5.375rem;
 //$xxxLarge: 6.25rem;
 
 //breakpoints
-$breakpoints: ('phone': 768px,
-  'tablet': 992px,
-  'desktop': 1440px) !default;
+$breakpoints: ('phone': 48em,
+  'tablet': 62em,
+  'desktop': 90em) !default;
 
-$transition-hover: all 0.6s linear;
+$transition-hover: all 0.5s linear;
